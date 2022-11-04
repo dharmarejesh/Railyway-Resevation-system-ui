@@ -1,0 +1,43 @@
+.custom-nav{
+    background-color: rgb(33,33,33);
+    opacity: 1;
+    position:fixed;
+    top: 0px;
+    z-index: 10;
+}
+.custom-logo{
+    position: relative;
+    top: 5px;
+    left: 25%;
+}
+
+img{
+    size: 20%;
+}
+
+.action{
+    position:absolute;
+    right: 6%;
+    top: 20px
+}
+
+.spacing{
+    margin:0 5px;
+}
+
+bg{
+    background-image: url("../assets/images/login-bg.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.hand:hover{
+    cursor: pointer;;
+}
+
+@media print {
+    .print-Ticket{
+        display:none;
+    }
+  }

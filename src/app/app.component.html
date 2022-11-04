@@ -1,0 +1,131 @@
+<div class="print-Ticket">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="/">
+          <img src="../assets/images/logo.png" height="20" alt="MDB Logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <!--On User Login-->
+        <div class="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" href="Train/Search">Search Train</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" *ngIf="checkAdmin()" href="Train/View">View All Train</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" *ngIf="checkUser() || checkUser()" href="Ticket/Search">Search / Cancel Ticket</a>
+            </li>
+            <li class="nav-item" *ngIf="checkAdmin()">
+              <a class="nav-link active" href="Ticket/Search">Search Ticket</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!check()" href="Login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!check()" href="Register">Register</a>
+            <a class="nav-link active hand"  *ngIf="check()" (click)="onLogout()">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</div>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+
+<div class="print-Ticket">
+  <!-- Footer -->
+  <section class="">
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+
+            <p>
+              
+              Book your Train Ticket on PRTC . PRTC has a database of all Trains 
+              in the Pakistan  with its user-friendly interface that makes it easy to search and book Train tickets.  
+         </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">ABOUT US</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                Launched in 2022, PRTC is a technology company focused on 
+                empowering Pakistan  travellers to plan and book their Tickets
+              </li>
+              
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-6 mb-md-2">
+            <h5 class="text-uppercase mb-0">CONACT US</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                  email: &nbsp; casestudyrrs@gmail.com  
+ 
+              </li>
+              
+             
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white">PRTC.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+</div>

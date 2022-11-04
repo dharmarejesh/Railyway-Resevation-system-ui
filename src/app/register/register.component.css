@@ -1,0 +1,36 @@
+.main{
+    height: 140vh;
+    background-image: url("../../assets/images/login-bg.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.spacing{
+    margin: .8rem 0;
+}
+
+.alert-spacing{
+    margin: 1rem;
+}
+
+.card-size{
+    width: 500px;
+    position: relative;
+    left: 4rem;
+    top: 4rem;
+    padding: .8rem;
+}
+
+.spacing-left{
+    padding-left: .2rem;
+}
+
+.spacing-right{
+    margin-right: .2rem;
+}
+
+.no-bootstrap-spacing{
+    margin: 0;
+    padding: 0;
+}
